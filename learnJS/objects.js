@@ -1,43 +1,17 @@
-// objects creating
-// objects contains properties
+describe('Add the Employee', () => {
+    it('Verify user can add the employe', () => {
+        cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
+        cy.get('input[name="username"]').type('Admin')
+        cy.get('input[name="password"]').type('admin123')
+        cy.get('button[type="submit"]').click()
+        cy.contains('Dashboard').should('be.visible')
+        cy.contains('PIM').click()
+        cy.contains('PIM').should('be.visible')
+        cy.contains('Add Employee').click()
+        cy.get('input[name="firstName"]').type('gowda')
+        cy.get('input[name="lastName"]').type('star')
+        cy.get('button[type="submit"]').click()
+        //cy.contains('Successfully saved').should('be.visible')
 
-const student ={
-    name : "Anjineyulu",
-    place : "bangalore",
-    age : 30,
-    college : "sdgs college"
-}
- 
-console.log(student.name)
-console.log(student.age)
-
-// 0r
-
-console.log(student['name'])
-console.log(student['age'])
-
-// we can modify the values of object properties
-
-student.place = "hyderabad"
-//or
-student['place'] = "hyderabad"
-
-console.log(student.place)
-
-// we can delete the properties of object 
-
-delete student.college
-// or
-delete student['college']
-
-console.log(student.college)
-
-// we can add the properties to the object also
-
-student['firstname'] = "thimmarayappa"
-student['lastname'] = "anjineyulu"
-
-// let me print student properties
-
-console.log(student)
-
+    })
+})
