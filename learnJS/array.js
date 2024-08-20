@@ -91,14 +91,20 @@ console.log(arr8)
 
 var arr9=["anji","gowda","sumanth","satish","nagendra","raghu"]
 
-// console.log("after slice")
+console.log("before slice")
 
-// console.log(arr9.slice(2))// here it will remvove the first two elements remaing part will be printed
+console.log(arr9)
 
-//  if we want removew or replace existing elements we will use splice()
+console.log("after slice")
 
+console.log(arr9.slice(2)) // here it will remvove the first two elements remaing part will be printed
+
+//if we want removew or replace existing elements we will use splice()
+var arr13=["anji","gowda","sumanth","satish","nagendra","raghu"]
+console.log("before splice")
+console.log(arr13)
 console.log("after splice")
-arr10=arr9.splice(2,3)
+arr10=arr13.splice(2,4)
 console.log(arr10)
 
 // if we want to get the string from array elements we will use join()
@@ -110,7 +116,7 @@ str=arr11.join("")
 
 console.log(str)
 
-// if we want to convert strong as a arrry we will use split()
+// if we want to convert string as a arrry we will use split()
 // and split() will spilt the string
 
 let str1 = "Anjineyulu"

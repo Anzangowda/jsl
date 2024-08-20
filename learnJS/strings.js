@@ -34,7 +34,7 @@ console.log(str6) // here we will get number type data like output is 10
 console.log(typeof(str6))
 
 str7=20+"anji"
-console.log(str7) // here nuumber converted into string
+console.log(str7) // here nuumber converted into string //20anji
 console.log(typeof(str7))
 
 str8=20-"anji"
@@ -76,7 +76,7 @@ console.log(str13.trim())
 
 console.log(str13.includes("z")) // it will retrun boolean value as false 
 
-// if we want to know the substring from index to index
+// if we want to get the substring from index to index
 
 str14="Anjineyulu"
 
@@ -121,6 +121,10 @@ str19="Anjineyulu"
 console.log(str19.split()) // it will return array object
 console.log(str19.split(""))
 console.log(str19.split("ne"))
+
+str20="I AM A TESTER"
+//console.log(str20.replace(' ',"").replace(' ',"").replace(' ',""))
+console.log(str20.replaceAll(' ',""))
 
 
 

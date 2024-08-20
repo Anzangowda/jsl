@@ -22,7 +22,10 @@ console.log(zzzz)
 console.log(zzzzz)
 
 a=10+"20" // here a value returns the string value 
-b=40-"30" // here b value returns  10
+b=40-"60" // here b value returns  10
+
+
+console.log(typeof(a))
 
 console.log(a) 
 console.log(b)
